@@ -10,15 +10,17 @@ body{
 #obj1 {
 	top:-1885px;
 	position: relative;
-	animation: slide-top1 0.8s linear infinite;
-	animation-iteration-count: 0;
+	animation: slide-top1 0.8s linear 0;
+/*	animation-iteration-count: 0;
+*/
 }
 
 #obj2 {
 	top:-630px;
 	position: relative;
-	animation: slide-top2 0.8s linear infinite;
-	animation-iteration-count: 0;
+	animation: slide-top2 0.8s linear 0;
+/*	animation-iteration-count: 0;
+*/
 }
 
 #obj3 {

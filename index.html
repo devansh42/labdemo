@@ -412,8 +412,9 @@
                
                 <button id="on">On</button>
 <button id="off">Off</button>
-
-                </td>
+<input id="count" placeholder="Enter Count for animation" />
+<button id="change">Change</button>
+		</td>
                 <td style="width: 10%; height:5rem   ; background-color: azure"> </td>
             </tr>
         <tr></tr>
@@ -422,12 +423,16 @@
 
     </table>
 	<script>
+		$("#change").click(e=>{
+		
+			$("#obj1,#obj2").css({"animation-iteration-count":parseInt($("#count").val())});
+		});
 	$("#on").click(e=>{
 		$("#obj1,#obj2").css({"animation-iteration-count":Number.MAX_VALUE});
-	})
+	});
 	$("#off").click(e=>{
 		$("#obj1,#obj2").css({"animation-iteration-count":0});
-	})
+	});
 	</script>
 </body>
 </html>
